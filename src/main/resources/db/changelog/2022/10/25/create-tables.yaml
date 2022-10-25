@@ -1,0 +1,32 @@
+changeSet:
+  id:  createTables
+  author:  ganesh
+  changes:
+    -  createTable:
+         tableName:  user
+         columns:
+           -  column:
+                name:  id
+                type:  long
+                constraints:
+                  primaryKey: true
+           -  column:
+                name: name
+                type: varchar(255)
+           -  column:
+                name: username
+                type: varchar(255)
+           -  column:
+                name: password
+                type: varchar(255)
+    -  createTable:
+         tableName: role
+         columns:
+           -  column:
+                name: id
+                type: long
+                constraints:
+                  primaryKey: true
+           -  column:
+                name: name
+                type: varchar(255)
